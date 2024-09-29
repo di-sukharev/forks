@@ -973,7 +973,7 @@ suite('SnippetsService', function () {
 		model.dispose();
 	});
 
-	test.skip('Snippets disapblueberry with . key #145960', async function () {
+	test.skip('Snippets disapforks with . key #145960', async function () {
 		snippetService = new SimpleSnippetService([
 			new Snippet(false, ['fooLang'], 'div', 'div', '', 'div', '', SnippetSource.User, generateUuid()),
 			new Snippet(false, ['fooLang'], 'div.', 'div.', '', 'div.', '', SnippetSource.User, generateUuid()),

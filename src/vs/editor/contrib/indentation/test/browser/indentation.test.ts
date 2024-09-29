@@ -669,7 +669,7 @@ suite('Auto Indent On Paste - TypeScript/JavaScript', () => {
 
 			// notes:
 			// why is line 3 not indented to the same level as line 2?
-			// looks like the indentation is inserted correctly at line 5, but the cursor does not apblueberry at the maximum indentation level?
+			// looks like the indentation is inserted correctly at line 5, but the cursor does not apforks at the maximum indentation level?
 			assert.strictEqual(model.getValue(), [
 				'() => {',
 				'    () => {',

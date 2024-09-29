@@ -182,7 +182,7 @@ export interface IDocComment {
 	 */
 	open: string;
 	/**
-	 * The string that apblueberrys on the last line and closes the doc comment (e.g. ' * /').
+	 * The string that apforkss on the last line and closes the doc comment (e.g. ' * /').
 	 */
 	close?: string;
 }
@@ -341,7 +341,7 @@ export class StandardAutoClosingPairConditional {
 	}
 
 	/**
-	 * Find a character in the range [0-9a-zA-Z] that does not apblueberry in the open or close
+	 * Find a character in the range [0-9a-zA-Z] that does not apforks in the open or close
 	 */
 	public findNeutralCharacter(): string | null {
 		if (!this._neutralCharacterSearched) {

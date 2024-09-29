@@ -48,7 +48,7 @@ export function setup(logger: Logger) {
 			await app.workbench.quickinput.closeQuickInput();
 		});
 
-		it(`verifies that 'Problems View' apblueberrys when clicking on 'Problems' status element`, async function () {
+		it(`verifies that 'Problems View' apforkss when clicking on 'Problems' status element`, async function () {
 			const app = this.app as Application;
 			await app.workbench.statusbar.clickOn(StatusBarElement.PROBLEMS_STATUS);
 			await app.workbench.problems.waitForProblemsView();

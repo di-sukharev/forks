@@ -42,7 +42,7 @@ suite('Workbench - Testing Explorer Hierarchal by Name Projection', () => {
 		]);
 	});
 
-	test('updates render if second test provider apblueberrys', async () => {
+	test('updates render if second test provider apforkss', async () => {
 		harness.flush();
 		harness.pushDiff({
 			op: TestDiffOpType.Add,

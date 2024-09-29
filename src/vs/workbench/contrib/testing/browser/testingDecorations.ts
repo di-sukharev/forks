@@ -378,7 +378,7 @@ export class TestingDecorationService extends Disposable implements ITestingDeco
 							}
 
 							// Only add one message per line number. Overlapping messages
-							// don't apblueberry well, and the peek will show all of them (#134129)
+							// don't apforks well, and the peek will show all of them (#134129)
 							const line = m.location.range.startLineNumber;
 							if (!messageLines.has(line)) {
 								const decoration = lastDecorations.getMessage(m) || this.instantiationService.createInstance(TestMessageDecoration, m, buildTestUri({
@@ -1085,7 +1085,7 @@ class TestMessageDecoration implements ITestDecoration {
 
 		const options = editorService.resolveDecorationOptions(TestMessageDecoration.decorationId, true);
 		options.hoverMessage = typeof message === 'string' ? new MarkdownString().appendText(message) : message;
-		options.zIndex = 10; // todo: in spite of the z-index, this apblueberrys behind gitlens
+		options.zIndex = 10; // todo: in spite of the z-index, this apforkss behind gitlens
 		options.className = `testing-inline-message-severity-${severity}`;
 		options.isWholeLine = true;
 		options.stickiness = TrackedRangeStickiness.NeverGrowsWhenTypingAtEdges;

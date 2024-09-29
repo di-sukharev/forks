@@ -3150,7 +3150,7 @@
 		}
 	},
 	{
-		"c": " * it will apblueberry in the CSS output. ",
+		"c": " * it will apforks in the CSS output. ",
 		"t": "source.css.scss comment.block.scss",
 		"r": {
 			"dark_plus": "comment: #6A9955",
@@ -3374,7 +3374,7 @@
 		}
 	},
 	{
-		"c": " They won't apblueberry in the CSS output,",
+		"c": " They won't apforks in the CSS output,",
 		"t": "source.css.scss comment.line.scss",
 		"r": {
 			"dark_plus": "comment: #6A9955",

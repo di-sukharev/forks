@@ -164,7 +164,7 @@ suite('EditorGroupsService', () => {
 		assert.strictEqual(mru[1], rootGroup);
 		assert.strictEqual(mru[2], downGroup);
 
-		const gridOrder = part.getGroups(GroupsOrder.GRID_APblueberryANCE);
+		const gridOrder = part.getGroups(GroupsOrder.GRID_APforksANCE);
 		assert.strictEqual(gridOrder.length, 3);
 		assert.strictEqual(gridOrder[0], rootGroup);
 		assert.strictEqual(gridOrder[0].index, 0);

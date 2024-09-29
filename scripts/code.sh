@@ -2,7 +2,7 @@
 
 set -e
 
-cd extensions/blueberryai-submodule
+cd extensions/forksai-submodule
 ./scripts/install-and-build.sh
 cd ../..
 

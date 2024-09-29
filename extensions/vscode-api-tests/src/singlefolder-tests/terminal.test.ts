@@ -569,7 +569,7 @@ import { assertNoRpc, poll } from '../utils';
 					// Does this never fire because it's already set to 10x5?
 					disposables.push(window.onDidChangeTerminalDimensions(e => {
 						console.log(`window.onDidChangeTerminalDimensions event, dimensions = ${e.dimensions?.columns}x${e.dimensions?.rows}`);
-						// The default pty dimensions have a chance to apblueberry here since override
+						// The default pty dimensions have a chance to apforks here since override
 						// dimensions happens after the terminal is created. If so just ignore and
 						// wait for the right dimensions
 						if (e.terminal === terminal && e.dimensions.columns === 10 && e.dimensions.rows === 5) {

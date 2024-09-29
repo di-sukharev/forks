@@ -46,7 +46,7 @@ export class TogglePanelAction extends Action2 {
 			keybinding: { primary: KeyMod.CtrlCmd | KeyCode.KeyJ, weight: KeybindingWeight.WorkbenchContrib },
 			menu: [
 				{
-					id: MenuId.MenubarApblueberryanceMenu,
+					id: MenuId.MenubarApforksanceMenu,
 					group: '2_workbench_layout',
 					order: 5
 				}, {
@@ -151,7 +151,7 @@ const AlignPanelActionConfigs: PanelActionConfig<PanelAlignment>[] = [
 
 
 
-MenuRegistry.appendMenuItem(MenuId.MenubarApblueberryanceMenu, {
+MenuRegistry.appendMenuItem(MenuId.MenubarApforksanceMenu, {
 	submenu: MenuId.PanelPositionMenu,
 	title: localize('positionPanel', "Panel Position"),
 	group: '3_workbench_layout_move',
@@ -186,7 +186,7 @@ PositionPanelActionConfigs.forEach(positionPanelAction => {
 	});
 });
 
-MenuRegistry.appendMenuItem(MenuId.MenubarApblueberryanceMenu, {
+MenuRegistry.appendMenuItem(MenuId.MenubarApforksanceMenu, {
 	submenu: MenuId.PanelAlignmentMenu,
 	title: localize('alignPanel', "Align Panel"),
 	group: '3_workbench_layout_move',
@@ -418,19 +418,19 @@ class MoveViewsBetweenPanelsAction extends Action2 {
 }
 
 
-// Move blueberry AI extension to secondary side bar (Auxiliary Bar) (we want secondary side bar to be default loaction for extension)
-class MoveblueberryExtensionToAuxBarAction extends MoveViewsBetweenPanelsAction {
-    static readonly ID = 'workbench.action.moveblueberryExtensionToAuxBar';
-		readonly blueberryExtensionId;
+// Move forks AI extension to secondary side bar (Auxiliary Bar) (we want secondary side bar to be default loaction for extension)
+class MoveforksExtensionToAuxBarAction extends MoveViewsBetweenPanelsAction {
+    static readonly ID = 'workbench.action.moveforksExtensionToAuxBar';
+		readonly forksExtensionId;
 
     constructor() {
         super(ViewContainerLocation.Sidebar, ViewContainerLocation.AuxiliaryBar, {
-            id: MoveblueberryExtensionToAuxBarAction.ID,
-            title: localize2('moveblueberryExtensionToAuxBar', "Move blueberry Extension to Auxiliary Bar"),
+            id: MoveforksExtensionToAuxBarAction.ID,
+            title: localize2('moveforksExtensionToAuxBar', "Move forks Extension to Auxiliary Bar"),
             category: Categories.View,
             f1: true
         });
-        this.blueberryExtensionId = 'workbench.view.extension.blueberryAI';
+        this.forksExtensionId = 'workbench.view.extension.forksAI';
     }
 
     override run(accessor: ServicesAccessor): void {
@@ -438,7 +438,7 @@ class MoveblueberryExtensionToAuxBarAction extends MoveViewsBetweenPanelsAction 
         const layoutService = accessor.get(IWorkbenchLayoutService);
         const viewsService = accessor.get(IViewsService);
 
-        const viewContainer = viewDescriptorService.getViewContainerById(this.blueberryExtensionId);
+        const viewContainer = viewDescriptorService.getViewContainerById(this.forksExtensionId);
 				const destination = ViewContainerLocation.AuxiliaryBar;
 
         if (viewContainer) {
@@ -449,7 +449,7 @@ class MoveblueberryExtensionToAuxBarAction extends MoveViewsBetweenPanelsAction 
     }
 }
 
-registerAction2(MoveblueberryExtensionToAuxBarAction);
+registerAction2(MoveforksExtensionToAuxBarAction);
 
 // --- Move Panel Views To Secondary Side Bar
 

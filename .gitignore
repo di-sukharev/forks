@@ -21,5 +21,5 @@ vscode.db
 product.overrides.json
 *.snap.actual
 .vscode-test
-extensions/blueberryai-submodule
-extensions/blueberryai-ref
+extensions/forksai-submodule
+extensions/forksai-ref

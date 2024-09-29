@@ -411,7 +411,7 @@ suite('ExtHostDiagnostics', () => {
 		collection.set(URI.parse('aa:bb'), [diag]);
 	});
 
-	test('vscode.languages.getDiagnostics apblueberrys to return old diagnostics in some circumstances #54359', function () {
+	test('vscode.languages.getDiagnostics apforkss to return old diagnostics in some circumstances #54359', function () {
 		const ownerHistory: string[] = [];
 		const diags = new ExtHostDiagnostics(new class implements IMainContext {
 			getProxy(id: any): any {

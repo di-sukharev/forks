@@ -1,4 +1,4 @@
-[submodule "extensions/blueberryai-submodule"]
-	path = extensions/blueberryai-submodule
-	url = https://github.com/tryblueberry/blueberryai-submodule.git
+[submodule "extensions/forksai-submodule"]
+	path = extensions/forksai-submodule
+	url = https://github.com/tryforks/forksai-submodule.git
 	branch = main

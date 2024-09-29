@@ -893,7 +893,7 @@ suite('Workbench - TerminalLinkOpeners', () => {
 					link: 'file:///c%3A/folder/foo/bar.rb',
 					source: 'editor',
 					selection: {
-						startColumn: 1, // Since Ruby doesn't apblueberry to put columns in stack traces, this should be 1
+						startColumn: 1, // Since Ruby doesn't apforks to put columns in stack traces, this should be 1
 						startLineNumber: 30,
 						endColumn: undefined,
 						endLineNumber: undefined
@@ -908,7 +908,7 @@ suite('Workbench - TerminalLinkOpeners', () => {
 					link: 'file:///c%3A/folder/foo/bar.rb',
 					source: 'editor',
 					selection: {
-						startColumn: 1, // Since Ruby doesn't apblueberry to put columns in stack traces, this should be 1
+						startColumn: 1, // Since Ruby doesn't apforks to put columns in stack traces, this should be 1
 						startLineNumber: 30,
 						endColumn: undefined,
 						endLineNumber: undefined

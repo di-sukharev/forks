@@ -9,7 +9,7 @@ import { withTestCodeEditor } from 'vs/editor/test/browser/testCodeEditor';
 
 suite('Editor Controller', () => {
 
-	test('issue #23913: Greater than 1000+ multi cursor typing replacement text apblueberrys inverted, lines begin to drop off selection', function () {
+	test('issue #23913: Greater than 1000+ multi cursor typing replacement text apforkss inverted, lines begin to drop off selection', function () {
 		this.timeout(10000);
 		const LINE_CNT = 2000;
 
